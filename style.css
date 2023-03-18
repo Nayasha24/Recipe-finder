@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap');
+
+$firaSans: 'Fira Sans', sans-serif;
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body,html {
+
+    margin: 0;
+}
+  
+.image {
+    background-image: url("https://img.freepik.com/premium-photo/risotto-with-vegetables-red-sauce_52137-29625.jpg?w=2000");
+    background-position:center;
+    background-size: 100% 100%;
+    filter: opacity(70%);
+    height:300vh;
+    background-repeat: repeat;
+}
+
+.container{
+    position: relative;
+    top:-2000px;
+        
+}
+
+
+span{
+    
+	font-family: 'Raleway', sans-serif;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size:100px;
+      letter-spacing:0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 
+                          8px 8px #ffad31,
+                          20px 20px #000000;
+  }
+
+
+  .search-container{
+    margin-top: 50px;
+    background: #fff;
+    height: 30px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+    /*box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    inset -7px -7px 10px 0px rgba(0,0,0,.1),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+   text-shadow:  0px 0px 6px rgba(255,255,255,.3),
+              -4px -4px 6px rgba(116, 125, 136, .2);
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);*/
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+.search-container:hover > .search-input{
+    width: 400px;
+}
+
+.search-container .search-input{
+    background: transparent;
+    border: none;
+    outline:none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+
+}
+
+.search-container .search-btn .fas{
+    color: #5cbdbb;
+}
+
+
+.card {
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0px 2px 20px var(--clr-gray200);
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+
+.card__image {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card__title {
+    padding: 1rem;
+}
+
+.card__description {
+    padding: 0 1rem;
+}
+
+.card__btn {
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    border: 2px solid var(--clr-primary);
+    background: transparent;
+    color: var(--clr-primary);
+    border-radius: var(--radius);
+    transition: background 200ms ease-in, color 200ms ease-in;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card:hover .card__btn {
+    background: var(--clr-primary);
+    color: white;
+}
+
+.Cards-section {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    height: 58px;
+    font-size: 20px;
+    transform: skew(-3deg, 1deg);
+    font-family: "Knewave", cursive;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: white;
+    border: 2px solid black;
+    color: #111;
+    padding: 10px;
+}
